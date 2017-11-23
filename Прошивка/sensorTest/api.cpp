@@ -24,6 +24,13 @@ void API::setupSensors(int firstIRpin, int secondIRpin, int thirdIRpin, long mod
     thirdIR = new SharpIR(thirdIRpin, model);  
 }
 
+void setupSensors(int firstIRpin, long firstModel, int secondIRpin, long secondModel, int thirdIRpin, long thirdModel)
+{
+	firstIR = new SharpIR(firstIRpin, firstModel);  
+    secondIR = new SharpIR(secondIRpin, secondModel);  
+    thirdIR = new SharpIR(thirdIRpin, thirdModel);
+}
+
 void API::turnLeft()
 {
     servo.write(mainAngle - rotateAngle);

@@ -21,6 +21,7 @@ public:
     void setupServo(int pin);
     void setupDrives(int IN1pin, int IN2pin, int IN3pin, int IN4pin);
     void setupSensors(int firstIRpin, int secondIRpin, int thirdIRpin, long model);
+	void setupSensors(int firstIRpin, long firstModel, int secondIRpin, long secondModel, int thirdIRpin, long thirdModel);
 
     void turnLeft();
     void turnRight();
